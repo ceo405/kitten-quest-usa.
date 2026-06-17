@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kitten Quest USA by mewv.ai</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="cabinet">
+      <section class="screen" aria-label="Kitten Quest USA guessing game">
+        <div class="scanlines"></div>
+
+        <header class="hud">
+          <div>
+            <p class="eyebrow">A mewv.ai advocacy game</p>
+            <h1>Kitten Quest USA</h1>
+            <p class="brand-line">powered by <span>mewv.ai</span></p>
+          </div>
+          <div class="status" aria-label="Game status">
+            <span id="roundStatus">ROUND 1/5</span>
+            <span id="scoreStatus">SCORE 0</span>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="sprite-stage" aria-label="Kitten reward stage">
+            <div class="moon"></div>
+            <div class="star one"></div>
+            <div class="star two"></div>
+            <div class="star three"></div>
+            <div class="mewv-sign" aria-label="Mewv lab sign">
+              <img src="assets/mewv-logo.jpg" alt="Mewv logo">
+              <span>MEWV LAB</span>
+            </div>
+            <div id="kittenSprite" class="pixel-cat kitten-0" aria-hidden="true">
+              <span class="ear left"></span>
+              <span class="ear right"></span>
+              <span class="head"></span>
+              <span class="eye left"></span>
+              <span class="eye right"></span>
+              <span class="nose"></span>
+              <span class="body"></span>
+              <span class="tail"></span>
+              <span class="paw one"></span>
+              <span class="paw two"></span>
+              <span class="badge"></span>
+            </div>
+            <div class="ground"></div>
+          </div>
+
+          <div class="mission">
+            <p class="label">Main Quest</p>
+            <h2>Guess the U.S. outdoor kitten data.</h2>
+            <p>
+              Correct answers reveal random common cats. Get all 5 right to
+              unlock a rare breed kitten.
+            </p>
+            <div class="brand-chip">mewv.ai x Codex Community Meetup</div>
+          </div>
+        </section>
+
+        <section class="scoreboard" aria-label="United States model estimates">
+          <article>
+            <span>LOW U.S.</span>
+            <strong>55,377</strong>
+            <small>estimated births/day</small>
+          </article>
+          <article class="active">
+            <span>MID U.S.</span>
+            <strong>114,148</strong>
+            <small>estimated births/day</small>
+          </article>
+          <article>
+            <span>HIGH U.S.</span>
+            <strong>217,479</strong>
+            <small>estimated births/day</small>
+          </article>
+        </section>
+
+        <section class="playfield">
+          <div class="panel quiz-panel">
+            <div class="panel-title">
+              <span>PLAYER 1</span>
+              <strong id="questionKicker">U.S. DATA ROUND</strong>
+            </div>
+
+            <p id="questionText" class="question"></p>
+            <div id="answerGrid" class="answer-grid" aria-label="Answer choices"></div>
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <div class="controls-row">
+              <button id="nextButton" type="button" disabled>Next Round</button>
+              <button id="restartButton" type="button">Restart</button>
+            </div>
+          </div>
+
+          <aside class="panel dark">
+            <div class="panel-title">
+              <span>MEWV REWARD LAB</span>
+              <strong id="kittenName">Starter Kitten</strong>
+            </div>
+
+            <div class="lab-badge" aria-label="Mewv reward lab badge">
+              <img src="assets/mewv-logo.jpg" alt="Mewv logo">
+              <span>CAT DATA QUEST</span>
+            </div>
+
+            <div class="mega-number" id="scoreBig">0/5</div>
+            <p id="rewardText" class="caption">Answer correctly to evolve your kitten.</p>
+            <div id="scoreCats" class="score-cats" aria-label="Animated score cats"></div>
+
+            <div class="quest-log">
+              <p><b>Data region:</b> United States</p>
+              <p><b>Goal:</b> estimate outdoor kitten births per day</p>
+              <p><b>Perfect run:</b> unlock the rare breed kitten</p>
+            </div>
+          </aside>
+        </section>
+
+        <footer class="footer-bar">
+          <span class="trademark">Kitten Quest USA is a mewv.ai project. mewv.ai TM</span>
+          <nav aria-label="Project files">
+            <a href="research_brief.md">Research Brief</a>
+            <a href="pipeline_design.md">Pipeline Design</a>
+            <a href="meetup_one_pager.md">Meetup One-Pager</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

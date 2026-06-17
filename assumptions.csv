@@ -1,0 +1,5 @@
+scenario,outdoor_cat_population,female_share,breeding_age_female_share,intact_breeding_female_share,litters_per_year,kittens_per_litter
+low,25000000,0.50,0.55,0.70,1.4,3.0
+mid,40000000,0.50,0.62,0.80,1.4,3.0
+high,60000000,0.50,0.70,0.90,1.4,3.0
+
